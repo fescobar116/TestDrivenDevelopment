@@ -150,4 +150,45 @@ class RomanNumberConvertorTest {
 
         assertEquals("XC", convertor.convert(90));
     }
+    @Test
+    void shouldConvertToC(){
+        RomanNumberConvertor convertor = new RomanNumberConvertor();
+
+        assertEquals("C", convertor.convert(100));
+    }
+
+    @Test
+    void shouldConvertToCD(){
+        RomanNumberConvertor convertor = new RomanNumberConvertor();
+
+        assertEquals("CD", convertor.convert(400));
+    }
+
+    @Test
+    void shouldConvertToD(){
+        RomanNumberConvertor convertor = new RomanNumberConvertor();
+
+        assertEquals("D", convertor.convert(500));
+    }
+
+    @Test
+    void shouldConvertToCM(){
+        RomanNumberConvertor convertor = new RomanNumberConvertor();
+
+        assertEquals("CM", convertor.convert(900));
+    }
+
+    @Test
+    void shouldConvertToM(){
+        RomanNumberConvertor convertor = new RomanNumberConvertor();
+
+        assertEquals("M", convertor.convert(1000));
+    }
+
+    @Test
+    void shouldConvertToMMMCMXCIX(){
+        RomanNumberConvertor convertor = new RomanNumberConvertor();
+
+        assertEquals("MMMCMXCIX", convertor.convert(3999));
+    }
 }

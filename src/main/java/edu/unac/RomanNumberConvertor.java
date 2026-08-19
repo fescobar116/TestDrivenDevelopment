@@ -6,6 +6,11 @@ public class RomanNumberConvertor {
 
     private record RomanSymbol(int value, String symbol){};
     private static final List<RomanSymbol> SYMBOLS = List.of(
+            new RomanSymbol(1000, "M"),
+            new RomanSymbol(900, "CM"),
+            new RomanSymbol(500, "D"),
+            new RomanSymbol(400, "CD"),
+            new RomanSymbol(100, "C"),
             new RomanSymbol(90, "XC"),
             new RomanSymbol(50, "L"),
             new RomanSymbol(40, "XL"),
